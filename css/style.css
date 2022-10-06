@@ -1,0 +1,295 @@
+.inner{width: 1200px; margin:0 auto}
+body{}
+h2{width:100%;font-size: 1.3rem;/*제목꾸미는 그림은 배경으로 처리*/line-height: 1em; margin: 20px 0;font-weight: bold;}
+
+
+
+#wrap{
+    min-width: 1200px;
+overflow-x: hidden;}
+#header{}
+#section{}
+#footer{}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex_ver_center{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center; /*세로의 자식이 하나일경우만 적용한다*/ 
+    justify-content: center;
+}
+
+/*********************header****************************/
+.logo{
+    font-family: 'yg-jalnan';
+    font-weight: normal;
+    font-style: normal;
+   
+}
+#header .logo{
+    font-size: 1.8rem;
+    text-align: center;
+    margin:30px 0;
+    margin-top: 50px;
+}
+
+
+#nav .flex{justify-content: center;}
+#nav .gnb > li{
+    position: relative;
+    width: 100px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+#nav .gnb >li >a{
+    line-height: 100px;
+    font-size: 1rem;
+    color: #515151 ;
+    text-align: center;
+}
+
+#nav .gnb .depth2 li{
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+#nav .gnb .depth2 {
+    position: absolute;
+    z-index: 9999;
+    background-color: #fff;
+    width: 150px;
+    left: 50%;
+    height: 0;
+    transform: translate(-50%,0);
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#nav .gnb > li:hover .depth2{
+    height: 150px;
+}
+/*********************section****************************/
+#slide{
+    min-width: 1200px;
+    overflow-x: hidden;
+}
+
+#slide > div img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#slide .inner{position: relative;}
+#slide > div .slide_txt{
+    position: absolute;
+    right: 0px; bottom: 700px;
+    color: #0ff;
+    font-size: 5rem;
+    line-height: 1em;
+}
+/*********************section1****************************/
+#section1 .flex{
+    justify-content: space-between;
+}
+#section1 .main_img,   #section1  .list_img{
+         width:calc((100% - 50px)/2);
+         box-sizing: border-box;
+}
+#section1 .main_img {
+    border:1px solid #eee
+}
+#section1 .main_img a{
+    margin:50px 0;
+}
+#section1 .main_img .img_box{
+    overflow: hidden;
+}
+#section1 .main_img img{
+    width:100%;
+    transition: 0.5s;
+
+}
+#section1 .main_img .no, #section1 .list_img .no{
+    color: #888 ;
+    font-size: 3rem;
+    margin: 0 20px;
+
+}
+#section1 .main_img .subj,#section1 .list_img .subj{
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+#section1 .list_img .subj{
+    margin-left: 20px;
+}
+#section1 .main_img .subj span,#section1 .list_img .subj span{
+    font-size: 1.0rem;
+}
+#section1 .main_img  .pay,#section1 .list_img .pay {
+    color: #6eb8c3 ;
+}
+
+#section1 .main_img:hover img{
+    transform: scale(1.2);
+}
+#section1  .list_img li{
+
+    box-sizing:border-box;
+    border:1px solid #eee ;
+    height:25%;  width: 100%;
+    display: flex;
+    align-items: center;
+  
+}
+#section1 a{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+}
+#section1 .list_img p{
+
+}
+
+#section1 .subj span{
+    font-size: 0.9rem;
+    display: block;
+   
+}
+#section1 .pay{
+    position: absolute;
+    right:20px;bottom:20px
+}
+/*********************section2****************************/
+#section2 #ad{
+    width: 100%;
+    text-align: center;
+
+}
+/*********************section3****************************/
+
+
+
+
+/*********************section4****************************/
+#section4 .sec4_event{
+    border:1px solid #eee;
+
+}
+
+#section4 .sec4_event .tit{
+    font-size: 1.2rem;
+    margin: 0 20px;
+    margin-top: 30px;
+    font-weight: bold;
+
+}
+#section4 .sec4_event .txt{
+    font-size: 0.9rem;
+    margin: 0 20px;
+    margin-top: 10px;
+}
+#section4 .sec4_event .price{
+    
+    font-size: 1.2rem;
+    margin: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#section4 .img_box_txt{
+    position: relative;
+}
+#section4 .sec4_event .pay{
+    position: absolute;
+    bottom: 0; right: 0;
+    z-index: 8;
+    color: #6eb8c3;
+    margin-right: 20px;
+}
+
+#section4 .sec4_last{
+    color: #6eb8c3;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 1.5rem;
+}
+/*********************section5****************************/
+#section5 .flex{
+    justify-content: space-between;
+    
+}
+#section5{
+    margin-top: 100px;
+}
+#section5 .sec4_left{
+    width: 20%;
+}
+#section5 .sec4_mid{
+
+}
+#section5 .sec4_right{
+    width: 20%;
+}
+
+#section5 .sec4_left #sec4_left_1{
+    font-size: 0.9rem;
+}
+#section5 .sec4_left #sec4_left_2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+#section5 .sec4_left #sec4_left_3{
+    font-size: 0.8rem;
+}
+
+#section5 .sec4_mid p:nth-of-type(1){
+    font-size: 0.9rem;
+}
+#section5 .sec4_mid p:nth-of-type(2) {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #666;
+}
+
+#section5 .sec4_right p:nth-of-type(1){
+    font-size: 0.9rem;
+}
+#section5 .sec4_right img{
+    width: 300px;
+}
+
+
+
+/*********************footer****************************/
+#footer{
+    margin: 30px 0;
+    font-size: 0.8rem;
+    text-align: center;
+}
+#footer .footer_back{
+    background-color: #F1F5F8 ;
+    border-top: 1px solid #888;
+    padding: 30px 0;    
+}
+#footer .foot_top span{
+    margin: 6px;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+
+#footer .foot_bot{
+    margin-top: 15px;
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+}
